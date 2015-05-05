@@ -1,0 +1,126 @@
+<ul id="navlist">
+	<{if $xoops_cmod == system or $xoops_cmod == news or $xoops_cmod == mydownloads or $xoops_cmod == smartfaq or $xoops_cmod == gabarit or $xoops_cmod == wordbook or $xoops_cmod == mylinks or $xoops_cmod == sitemap}>
+		<li id="active"><a href="<{$xoops_url}>/" id="current">Accueil</a></li>
+	<{else}>
+		<li><a  href="<{$xoops_url}>/" >Accueil</a></li>
+	<{/if}>
+	<{if $xoops_cmod == icontent}>
+		<li id="active"><a href="<{$xoops_url}>/modules/icontent/index.php?page=131" id="current">Documents</a></li>
+	<{else}>
+		<li><a href="<{$xoops_url}>/modules/icontent/index.php?page=131">Documents</a></li>
+	<{/if}>
+	<{if $xoops_cmod == newbb}>
+		<li id="active"><a href="<{$xoops_url}>/modules/newbb/" id="current">Forums</a></li>
+	<{else}>
+		<li><a href="<{$xoops_url}>/modules/newbb/">Forums</a></li>
+	<{/if}>
+	<{if $xoops_cmod == catads}>
+		<li id="active"><a href="<{$xoops_url}>/modules/catads/" id="current">Annonces</a></li>
+	<{else}>
+		<li><a href="<{$xoops_url}>/modules/catads/">Annonces</a></li>
+	<{/if}>
+	<{if $xoops_cmod == formulaire or $xoops_cmod == smartpartner or $xoops_cmod == xfguestbook or $xoops_cmod == liens or $xoops_cmod == xoopsmembers}>
+		<li id="active"><a href="<{$xoops_url}>/modules/formulaire/index.php?id=4" id="current">Contacts</a></li>
+	<{else}>
+		<li><a href="<{$xoops_url}>/modules/formulaire/index.php?id=4" >Contacts</a></li>
+	<{/if}>
+	<{if $xoops_cmod == user}>
+		<{if $xoops_isuser}>
+			<{if $nbrepm>0}>
+				<li id="active"><a href="<{$xoops_url}>/viewpmsg.php" id="current"><{$xoops_uname}>:<{$nbrepm}></a></li>
+			<{else}>
+			<li id="active"><a href="<{$xoops_url}>/viewpmsg.php" id="current"><{$xoops_uname}></a></li>
+			<{/if}>
+		<{else}>
+			<li id="active"><a href="<{$xoops_url}>/register.php" id="current">S'enregistrer</a></li>
+		<{/if}>
+	<{else}>
+		<{if $xoops_isuser}>
+			<{if $nbrepm>0}>
+				<li id="active"><a href="<{$xoops_url}>/viewpmsg.php" ><{$xoops_uname}>:<{$nbrepm}></a></li>
+			<{else}>
+			<li id="active"><a href="<{$xoops_url}>/viewpmsg.php" ><{$xoops_uname}></a></li>
+			<{/if}>
+		<{else}>
+			<li id="active"><a href="<{$xoops_url}>/register.php" >S'enregistrer</a></li>
+		<{/if}>
+	<{/if}>
+</ul>
+<ul id="nav2">
+<{if $xoops_cmod == system or $xoops_cmod == news or $xoops_cmod == mydownloads or $xoops_cmod == smartfaq or $xoops_cmod == gabarit or $xoops_cmod == wordbook or $xoops_cmod == mylinks or $xoops_cmod == sitemap}>
+	<li><a href="<{$xoops_url}>/dev/">Vers la Forge...</a></li>
+	<li><a href="<{$xoops_url}>/modules/news/" <{if $xoops_cmod == news}>id="current"<{/if}>>Articles</a></li>
+	<{if $xoops_cmod == news}><li><a href="<{$xoops_url}>/modules/news/submit.php" class="new">&nbsp;</a></li><{/if}>
+	<li><a href="<{$xoops_url}>/modules/mydownloads/" <{if $xoops_cmod == mydownloads}>id="current"<{/if}>>Téléchargements</a></li>
+	<{if $xoops_cmod == mydownloads}><li><a href="<{$xoops_url}>/modules/mydownloads/submit.php" class="new">&nbsp;</a></li><{/if}>
+	<li><a href="<{$xoops_url}>/modules/smartfaq/" <{if $xoops_cmod == smartfaq}>id="current"<{/if}>>FAQ</a></li>
+	<{if $xoops_cmod == smartfaq}><li><a href="<{$xoops_url}>/modules/smartfaq/submit.php?op=add" class="new">&nbsp;</a></li><{/if}>
+	<li><a href="<{$xoops_url}>/modules/gabarit/" <{if $xoops_cmod == gabarit}>id="current"<{/if}>>Gabarits</a></li>
+	<{if $xoops_cmod == gabarit}><li><a href="<{$xoops_url}>/modules/gabarit/sumit.php" class="new">&nbsp;</a></li><{/if}>
+	<li><a href="<{$xoops_url}>/modules/wordbook/" <{if $xoops_cmod == wordbook}>id="current"<{/if}>>Glossaire</a></li>
+	<{if $xoops_cmod == wordbook}><li><a href="<{$xoops_url}>/modules/wordbook/submit.php" class="new">&nbsp;</a></li><{/if}>
+	<li><a href="<{$xoops_url}>/modules/mylinks/" <{if $xoops_cmod == mylinks}>id="current"<{/if}>>Liens</a></li>
+	<{if $xoops_cmod == mylinks}><li><a href="<{$xoops_url}>/modules/mylinks/submit.php" class="new">&nbsp;</a></li><{/if}>
+	<li><a href="<{$xoops_url}>/modules/sitemap/" <{if $xoops_cmod == sitemap}>id="current"<{/if}>>Plan du site</a></li>
+	<{if $xoops_isuser}>
+		<{if $xoops_isadmin}>
+			<li><a href="<{$xoops_url}>/modules/newbb/viewall.php?type=unreplied">Sujets sans réponses</a></li>
+		<{/if}>
+	<{/if}>
+<{/if}>
+<{if $xoops_cmod == icontent}>
+	<li><a href="<{$xoops_url}>/modules/icontent/index.php?page=12">Dossiers</a></li>
+	<li><a href="<{$xoops_url}>/modules/icontent/index.php?page=130">Ressources</a></li>
+	<li><a href="<{$xoops_url}>/modules/formulaire/index.php?title=Contact" class="new">&nbsp;</a></li>
+	<li><a href="<{$xoops_url}>/modules/icontent/index.php?page=80">Informations</a></li>
+	<li><a href="<{$xoops_url}>/modules/icontent/index.php?page=99">WebRing</a></li>
+<{/if}>
+<{if $xoops_cmod == newbb}><ul id="subnav">
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=14">WD9</a></li>
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=12">8</a></li>
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=5">7</a></li>
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=4">5</a></li>
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=6">Autour de WD</a></li>
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=15">PPC</a></li>
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=16">Accès natifs,</a></li>
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=7">Modules</a></li>
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=9">Forge,</a></li>
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=3">Public</a></li>
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=1">Membres</a></li>
+		<li><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=2">Animateurs</a></li>
+<{/if}>
+<{if $xoops_cmod == catads}><ul id="subnav">
+		<li><a href="<{$xoops_url}>/modules/catads/submit1.php">Soumettre</a></li>
+		<{if $xoops_isuser}>
+		<li><a href="<{$xoops_url}>/modules/catads/adsuserlist.php?uid=<{$xoops_userid}>">Mes annonces</a></li>
+		<{/if}>
+<{/if}>
+<{if $xoops_cmod == formulaire or $xoops_cmod == smartpartner or $xoops_cmod == xfguestbook or $xoops_cmod == liens or $xoops_cmod == xoopsmembers}>
+	<li><a href="<{$xoops_url}>/modules/formulaire/index.php?id=4">Equipe</a></li>
+	<li><a href="<{$xoops_url}>/modules/formulaire/index.php?id=2">R&B</a></li>
+	<li><a href="<{$xoops_url}>/modules/formulaire/index.php?id=3">DrCharly</a></li>
+	<li><a href="<{$xoops_url}>/modules/smartpartner/" <{if $xoops_cmod == smartpartner}>id="current"<{/if}>>Partenaires</a></li>
+	<li><a href="<{$xoops_url}>/modules/xfguestbook/" <{if $xoops_cmod == xfguestbook}>id="current"<{/if}>>Livre d'or</a></li>
+	<li><a href="<{$xoops_url}>/modules/liens/" <{if $xoops_cmod == liens}>id="current"<{/if}>>Réaliser un lien</a></li>
+	<{if $xoops_isuser}>
+		<li><a href="<{$xoops_url}>/modules/xoopsmembers/" <{if $xoops_cmod == xoopsmembers}>id="current"<{/if}>>Membres</a></li>
+	<{/if}>
+<{/if}>
+<{if $xoops_cmod == user}>
+	<{if $xoops_isuser}>
+		<{if $xoops_isadmin}>
+			<li><a href="<{$xoops_url}>/admin.php">Administration</a></li>
+		<{/if}>
+		<li><a href="<{$xoops_url}>/user.php">Votre compte</a></li>
+		<{if $nbrepm>0}>
+			<li><a href="<{$xoops_url}>/viewpmsg.php">Messagerie:<{$nbrepm}></a></li>
+		<{else}>
+			<li><a href="<{$xoops_url}>/viewpmsg.php">Messagerie</a></li>
+		<{/if}>
+		<li><a href="<{$xoops_url}>/user.php?op=logout">Deconnexion</a></li>
+	<{else}>
+		&nbsp;
+	<{/if}>
+<{/if}>
+</ul>
+

@@ -1,0 +1,284 @@
+/* main blocs definitions */
+body {
+background-color: #F4F4F4;
+color: black;
+font: 0.9em Verdana, "Trebuchet MS", "MS Sans Serif";
+}
+#header {
+width:100%;
+background-color: #F4F4F4;
+}
+#logo {
+background-image: url("images/logo.gif");
+background-repeat: no-repeat;
+padding-top: 10px;
+margin-left: 10px;
+width: 150px;
+height: 80px;
+float: left;
+}
+#banniere {
+float: right;
+width: 468px;
+height: 60px;
+padding-right : 10px;
+padding-top : 10px;
+}
+#conteneur {
+width:100%;
+margin:0 auto;
+background-color:white;
+
+}
+#centre {
+ padding: 0 0;
+ min-height: 150px;
+ background-image: url(images/wdf_Dossiers_bkg.gif); 
+ background-repeat: repeat-x;
+ background-position: top;
+}
+
+#pied {
+clear:both;
+height: 30px;
+color: #CC6666;
+text-align:center;
+font-size: 0.9em;
+}
+#content {
+padding: 0; margin-top: 0;
+}
+
+table { width: 100%; padding: 0; margin-top: 0;}
+table td { padding: 0; vertical-align:top; border: none;    }
+a {color: #3B71A5; text-decoration: none;  }
+a:hover {color: #C66;}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+ul {text-align: left;  margin: 0px 0px; }
+li { list-style: circle inside;}
+img {	border: none;}
+img.left { float: left;  padding-right: 0.5em;  }
+img.right { float: right;  padding-left: 0.5em;  }
+
+/*divs*/
+.clear{ clear: both; }
+.clearl{ clear: left; }
+.clearr{ clear: right; }
+.left{float:left;
+position: relative;
+}
+.right{float:right;
+text-align: right;
+position: relative;
+}
+
+
+input.formButton {}
+/* blocs dans #centre*/
+/*left columns unused*/
+/*td#leftcolumn {width: 170px; background-color: #F4F4F4; border-right: 1px solid #6699CC;
+border-left: 1px solid #6699CC; padding: 2px 0px 0px 2px;}
+td#leftcolumn th {background-color: #F4F4F4; color: #000000; vertical-align: middle;}
+td#leftcolumn div.blockTitle {padding: 3px; background-color: tranparent; color: #003399; font-weight: bold;}
+td#leftcolumn div.blockContent {padding: 2px; line-height: 100%;}*/
+
+td#centercolumn,td#centerCcolumn {padding: 0; margin: 0;}
+td#centercolumn th {background-color: silver; vertical-align: middle;}
+td#centerCcolumn legend.blockTitle,
+td#centerLcolumn legend.blockTitle,
+td#centerRcolumn legend.blockTitle,
+td#rightcolumn div.blockTitle {
+color: #C66; 
+font-weight: bold; 
+}
+td#centerCcolumn div.blockContent,
+td#centerLcolumn div.blockContent,
+td#centerRcolumn div.blockContent,
+td#rightcolumn div.blockContent {
+}
+td#centerLcolumn {width: 50%; padding: 0px 2px 0px 0px;}
+td#rightcolumn {
+width: 210px; 
+padding: 2px 0px 0px 2px;
+}
+td#rightcolumn th {
+}
+ {
+}
+/* xoops menus */
+#usermenu li,#mainmenu li {
+	list-style-type: none;
+}
+#usermenu a,#mainmenu a {
+	display: block;
+	padding: 3px;
+	font-weight: normal;
+	font-size: 0.9em;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-top: 0;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #69C;
+}
+#usermenu a:hover,#mainmenu a:hover {
+	text-decoration: none;
+	background-color: #F4F4F4;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #66CCCB;
+}
+#usermenu a.menuTop,#mainmenu a.menuTop {
+	padding-left: 10px;
+}
+#usermenu a.menuMain,#mainmenu a.menuMain {
+	padding-left: 10px;
+	margin-top: 1px;
+}
+#usermenu amenuSub, #mainmenu a.menuSub {
+	padding-left: 19px;
+	margin-top: 1px;
+}
+/* news */
+.item {}
+.itemHead {padding: 3px; background-color: #E2E2E2; }
+.itemInfo {text-align: right; padding: 3px; background-color: #FEFEFE; border-bottom :1px solid #DDDDDD;}
+.itemTitle a {font: 1.1em bold small-caps; color: Red; }
+.itemPoster {font-size: 0.9em;}
+.itemPostDate {font-size: 0.9em;}
+.itemStats {font-size: 0.9em;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px;}
+.itemText:first-letter {font-size: 1.15em; font-weight: bold;}
+.itemTopicImage {float: left;}
+.itemFoot {text-align: right; padding: 3px; background-color: #FEFEFE; border-top :1px solid #DDDDDD;}
+.itemAdminLink {font-size: 0.9em;}
+.itemPermaLink {font-size: 0.9em;}
+.outer {border-bottom: 2px solid silver;border-right: 2px solid silver;}
+.head {background-color: #E5E5E5; padding: 5px; font-weight: bold;}
+.even {background-color: #F9F9F9; padding: 5px;}
+.odd {background-color: #E9E9E9; padding: 5px;}
+.foot {background-color: #FFFFFF; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #F9F9F9; padding: 5px;}
+tr.odd td {background-color: #E9E9E9; padding: 5px;}
+/* Pages de redirections */
+div.errorMsg { 
+	background-color: #FCC;
+	text-align: center; border: 1px solid silver;
+	font-weight: bold;
+	padding: 10px;}
+div.confirmMsg {
+	background-color: #DDFFDF;
+	text-align: center;
+	border: 1px solid silver;
+	font-weight: bold;
+	padding: 10px;}
+div.resultMsg { 
+	background-color : #69C;
+	text-align: center;
+	border: 1px solid silver;
+	font-weight: bold;
+	padding: 10px;}
+/*Citations et codes */
+/*div.xoopsCode { background: #FFFFFF; border: 1px ridge #000080; font-family: "Courier New",Courier,monospace; padding: 0px 2px 0px 2px;}*/
+div.xoopsCode {
+padding: 3px;
+color: #5E5D63;
+background-color: #f4f4f4;
+border: silver 1px dashed;
+min-width: 400px;
+max-width: 600px;
+width: auto;
+font-family: "Courier New",Courier,monospace;
+height: auto;
+margin: 0.5em;
+overflow: scroll;
+}
+div.xoopsQuote {
+	background: #FFFFFF; 
+	border: 1px groove silver;
+	font-family: Courier,monospace;
+	padding: 0px 2px 0px 2px;}
+
+/*Formulaire (bouton, zone de texte...) */
+.navinput{width: 5em; }
+input.formButton {
+	border:1px solid silver;
+	background-color: transparent;	
+}
+.navinputImage {}
+/* Contenus*/
+fieldset{border : none;}
+div#content {text-align: left; padding: 2px 2px 2px 4px;}
+/*Commentaire*/
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 0.9em; color: #2F5376; font-weight:bold; border: 1px solid silver; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {font-size: 0.9em;margin-left: 2px; margin-top: 10px; color: #2F5376; font-weight:bold;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 0.9em;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-size: 0.9em;font-weight: normal; font-style: italic;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+/*webring */
+table#wd {width:350px; margin: 5; padding: 5; font-size: 0.9em;}
+a#wd {text-decoration: none; font-weight: bold; background-color: transparent; font-size: 0.9em; }
+a#wd:hover { color: Red; font-weight: bold; text-decoration: underline;}
+/*Hosted pages*/
+div #ModCenter {
+	clear:both; 
+	background-color: #FFFFFF; 
+	border-right: 1px solid #69C;
+	border-left: 1px solid #69C;
+	overflow:hidden;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+/*icontent*/
+#ic_head {
+ width:100%;
+ height:100px;
+ background-image: url('images/wdf_Dossiers_bkg.gif'); 
+ background-repeat: repeat-x;
+ background-position: top;
+ margin:0;
+ padding:0;
+}
+span.ic_left{float: left;  position: relative;  top: 0px;  left: 0px;
+ background-image: url('images/wdf_Dossiers.gif'); 
+ background-repeat: no-repeat;
+ background-position: top;
+}
+span.ic_right{float: right; position: relative;  top: 0px;  right: 0px;
+ background: url('images/wdf_Dossiers_accueil.gif') right no-repeat;
+}
+/* color -- dropdown menu for Forum */
+#dropdown a{
+	color:white;
+	}
+
+#dropdown .menubar, #dropdown .menu, #dropdown .item, #dropdown .separator{
+	background-color: #69c;
+	color:white;
+	}
+
+#dropdown .separator{
+	border: 1px inset #F4F4f4;
+	}
+
+#dropdown .menu a:hover{
+	color: #333;
+	}
+/* color - end */
